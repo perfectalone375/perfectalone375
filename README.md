@@ -11,8 +11,8 @@
 [![Docker](https://img.shields.io/badge/Docker-Ready-2496ED?logo=docker&logoColor=white)](https://docker.com)
 [![Docker Compose](https://img.shields.io/badge/Docker--Compose-Microservices-2496ED.svg?logo=docker&logoColor=white)](https://docs.docker.com/compose/)
 [![Model Context Protocol](https://img.shields.io/badge/MCP-Protocol%202024--11--05-8A2BE2.svg)](https://modelcontextprotocol.io)
-[![Test Suite Status](https://img.shields.io/badge/Tests-164%2B%20Passing-success.svg)](https://github.com/perfectalone375)
-[![Merged Pull Requests](https://img.shields.io/badge/Merged%20PRs-20%20Merged-success.svg?logo=git&logoColor=white)](https://github.com/perfectalone375)
+[![Test Suite Status](https://img.shields.io/badge/Tests-171%2B%20Passing-success.svg)](https://github.com/perfectalone375)
+[![Merged Pull Requests](https://img.shields.io/badge/Merged%20PRs-22%20Merged-success.svg?logo=git&logoColor=white)](https://github.com/perfectalone375)
 
 <br/>
 
@@ -29,7 +29,7 @@
 I am an **Aerospace & Computational Simulation Software Engineer** specializing in translating complex physical dynamics, multi-stage rocket trajectories, orbital mechanics, and fluid flows into high-performance, test-driven software, containerized microservices, and **Model Context Protocol (MCP)** tools. My work enables autonomous AI systems (Claude, Cursor, Antigravity) to reason through and simulate atmospheric flight physics, satellite orbits, aerodynamic surfaces, and propulsion thermodynamics with deterministic precision.
 
 - 🚀 **Core Focus:** Computational flight simulation, multi-stage vehicle staging, physics-informed AI surrogates, cloud-native aerospace microservices, and reproducible AI coding benchmarks (SWE-bench).
-- 🛠️ **Engineering Stack:** Python (NumPy, SciPy, Matplotlib), C++, TypeScript, Pytest (164+ passing tests), Docker, Docker Compose, GitHub Actions (CI/CD), Linux.
+- 🛠️ **Engineering Stack:** Python (NumPy, SciPy, Matplotlib), C++, TypeScript, Pytest (171+ passing tests), Docker, Docker Compose, GitHub Actions (CI/CD), Prometheus Observability, Linux.
 - 📐 **Domain Expertise:** 6-DoF Quaternions & Euler Rotational Dynamics, Multi-Stage Rocket Staging & Jettison, 1976 U.S. Standard Atmosphere (0–86 km), Transonic Drag Divergence, Runge-Kutta (RK4) Solvers, SGP4/J2 Secular Perturbations, Hohmann & 3-Impulse Bi-Elliptic Orbit Transfers, Global Ground Station Constellation Handovers, 2D Supersonic Oblique Shocks & $\theta-\beta-M$ Solvers, Vortex Panel Methods, Squire-Young Viscous Drag, NACA 4/5-Digit Camber, Compressible Isentropic Flow & Shock Waves, Tsiolkovsky Staged Rocket Propulsion.
 - 🤖 **AI Benchmarking & Tooling:** Designing deterministic fail-to-pass test harnesses and golden patches for LLM code evaluation across physical ODEs and aerodynamic singularities.
 
@@ -75,8 +75,8 @@ graph TD
 | Category | Technologies & Tools |
 |---|---|
 | **Languages** | Python 3.10–3.12 (NumPy, SciPy, Matplotlib), C++, TypeScript, Bash, SQL |
-| **Software Engineering** | Pytest (164+ Automated Tests), Test-Driven Development (TDD), Docker, Docker Compose, GitHub Actions, Ruff, OOD |
-| **Cloud & Microservices** | FastAPI, ASGI/Uvicorn, REST Gateways, WebSocket Telemetry, Multi-stage Dockerfiles, Docker Networks (`aero-mesh`) |
+| **Software Engineering** | Pytest (171+ Automated Tests), Test-Driven Development (TDD), Docker, Docker Compose, GitHub Actions, Ruff, OOD |
+| **Cloud & Microservices** | FastAPI, ASGI/Uvicorn, Prometheus Observability, REST Gateways, WebSocket Telemetry, Multi-stage Dockerfiles |
 | **AI & Agent Tooling** | Model Context Protocol (MCP stdio/JSON-RPC), SWE-bench Benchmark Authoring, LLM Code Evaluation |
 | **Aerospace & Flight Physics** | 6-DoF Quaternions & Euler Dynamics, 3-DoF RK4 Trajectory, Multi-Stage Staging & Casing Jettison, 1976 US Standard Atmosphere |
 | **Astrodynamics & Ground** | SGP4/J2 Secular Oblateness, Hohmann & 3-Impulse Bi-Elliptic Transfers, Global Ground Station Network Handovers, WGS-84 Geodetic |
