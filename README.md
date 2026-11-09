@@ -172,6 +172,6 @@ graph TD
 ---
 
 ### 📫 Connect With Me
-* **Email:** [vigneshthirupati2000@gmail.com](mailto:vigneshthirupati2000@gmail.com)
+* **Email:** [gopinagavignesh375@gmail.com](mailto:gopinagavignesh375@gmail.com)
 * **LinkedIn:** [linkedin.com/in/vignesh375](https://linkedin.com/in/vignesh375)
 * **GitHub Profile:** [github.com/perfectalone375](https://github.com/perfectalone375)
