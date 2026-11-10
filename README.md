@@ -2,7 +2,7 @@
 
 # Gopi Naga Vignesh Thirupati
 ### Aerospace & Computational Simulation Software Engineer
-#### 3-DoF/6-DoF Dynamics • Multi-Stage Rocket Staging • SGP4 Orbit Propagation • Physics-Informed CFD • AI Model Evaluation (SWE-bench) • Docker & MCP
+#### 3-DoF/6-DoF Dynamics • Multi-Stage Rocket Staging • SGP4 Orbit Propagation • Physics-Informed CFD • Handshake AI & SWE-bench • SQLite WAL • Docker & MCP
 
 [![GitHub Followers](https://img.shields.io/github/followers/perfectalone375?style=social)](https://github.com/perfectalone375)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=flat&logo=linkedin)](https://linkedin.com/in/vignesh375)
@@ -11,8 +11,8 @@
 [![Docker](https://img.shields.io/badge/Docker-Ready-2496ED?logo=docker&logoColor=white)](https://docker.com)
 [![Docker Compose](https://img.shields.io/badge/Docker--Compose-Microservices-2496ED.svg?logo=docker&logoColor=white)](https://docs.docker.com/compose/)
 [![Model Context Protocol](https://img.shields.io/badge/MCP-Protocol%202024--11--05-8A2BE2.svg)](https://modelcontextprotocol.io)
-[![Test Suite Status](https://img.shields.io/badge/Tests-171%2B%20Passing-success.svg)](https://github.com/perfectalone375)
-[![Merged Pull Requests](https://img.shields.io/badge/Merged%20PRs-22%20Merged-success.svg?logo=git&logoColor=white)](https://github.com/perfectalone375)
+[![Test Suite Status](https://img.shields.io/badge/Tests-180%2B%20Passing-success.svg)](https://github.com/perfectalone375)
+[![Merged Pull Requests](https://img.shields.io/badge/Merged%20PRs-23%20Merged-success.svg?logo=git&logoColor=white)](https://github.com/perfectalone375)
 
 <br/>
 
@@ -28,14 +28,14 @@
 
 I am an **Aerospace & Computational Simulation Software Engineer** specializing in translating complex physical dynamics, multi-stage rocket trajectories, orbital mechanics, and fluid flows into high-performance, test-driven software, containerized microservices, and **Model Context Protocol (MCP)** tools. My work enables autonomous AI systems (Claude, Cursor, Antigravity) to reason through and simulate atmospheric flight physics, satellite orbits, aerodynamic surfaces, and propulsion thermodynamics with deterministic precision.
 
-- 🚀 **Core Focus:** Computational flight simulation, multi-stage vehicle staging, physics-informed AI surrogates, cloud-native aerospace microservices, and reproducible AI coding benchmarks (SWE-bench).
-- 🛠️ **Engineering Stack:** Python (NumPy, SciPy, Matplotlib), C++, TypeScript, Pytest (171+ passing tests), Docker, Docker Compose, GitHub Actions (CI/CD), Prometheus Observability, Linux.
+- 🚀 **Core Focus:** Computational flight simulation, multi-stage vehicle staging, physics-informed AI surrogates, cloud-native aerospace microservices, zero-dependency ACID database persistence, and reproducible AI coding benchmarks (SWE-bench / Handshake AI).
+- 🛠️ **Engineering Stack:** Python (NumPy, SciPy, Matplotlib), C++, TypeScript, Pytest (180+ passing tests), SQLite (WAL mode), Docker, Docker Compose, GitHub Actions (CI/CD), Prometheus Observability, Linux.
 - 📐 **Domain Expertise:** 6-DoF Quaternions & Euler Rotational Dynamics, Multi-Stage Rocket Staging & Jettison, 1976 U.S. Standard Atmosphere (0–86 km), Transonic Drag Divergence, Runge-Kutta (RK4) Solvers, SGP4/J2 Secular Perturbations, Hohmann & 3-Impulse Bi-Elliptic Orbit Transfers, Global Ground Station Constellation Handovers, 2D Supersonic Oblique Shocks & $\theta-\beta-M$ Solvers, Vortex Panel Methods, Squire-Young Viscous Drag, NACA 4/5-Digit Camber, Compressible Isentropic Flow & Shock Waves, Tsiolkovsky Staged Rocket Propulsion.
 - 🤖 **AI Benchmarking & Tooling:** Designing deterministic fail-to-pass test harnesses and golden patches for LLM code evaluation across physical ODEs and aerodynamic singularities.
 
 ---
 
-### 🌐 Computational Aerospace Architecture
+### 🌐 Computational Aerospace & AI Architecture
 
 ```mermaid
 graph TD
@@ -46,26 +46,27 @@ graph TD
         OET["📐 openengineering-toolkit<br/>(Propulsion, Compressible & Mechanics)"]
     end
 
-    subgraph AI Agent & Evaluation Harness
-        AEB["🔬 aero-eval-benchmark<br/>(SWE-bench Style AI Coding Benchmark)"]
-        MCP["🤖 Model Context Protocol (MCP)<br/>(Claude Desktop • Cursor • Antigravity)"]
+    subgraph Central Operations & AI Tooling
+        OPS["🌐 aerospace-ops-stack<br/>(Enterprise Gateway & Telemetry Hub)"]
+        MCP["⚡ MCP Central Portal<br/>(JSON-RPC 2.0 Dynamic Tool Registry)"]
+        HAI["🤖 Handshake AI Suite<br/>(SWE-bench Fail-to-Pass Benchmark)"]
+        DB[("🗄️ SQLite ACID Database<br/>(WAL Mode • Telemetry Events • Leaderboard)")]
     end
 
-    subgraph Cloud-Native Production Stack
-        OPS["🌐 aerospace-ops-stack<br/>(FastAPI Microservices & Mission Control UI)"]
+    subgraph Cloud-Native Production Mesh
         DOCKER["🐳 Docker & Docker Compose<br/>(Production Container Network: aero-mesh)"]
+        PROM["📊 Prometheus Observability<br/>(Microservice Metrics Scrape Target)"]
     end
 
-    AFD -->|JSON-RPC 2.0| MCP
-    CFD -->|JSON-RPC 2.0| MCP
-    OTA -->|JSON-RPC 2.0| MCP
-    OET -->|JSON-RPC 2.0| MCP
-    MCP --> AEB
-    AFD --> OPS
-    CFD --> OPS
-    OTA --> OPS
-    OET --> OPS
+    AFD -->|Tool Registry| MCP
+    CFD -->|Tool Registry| MCP
+    OTA -->|Tool Registry| MCP
+    OET -->|Tool Registry| MCP
+    MCP --> OPS
+    HAI --> OPS
+    OPS --> DB
     OPS --> DOCKER
+    OPS --> PROM
 ```
 
 ---
@@ -74,10 +75,10 @@ graph TD
 
 | Category | Technologies & Tools |
 |---|---|
-| **Languages** | Python 3.10–3.12 (NumPy, SciPy, Matplotlib), C++, TypeScript, Bash, SQL |
-| **Software Engineering** | Pytest (171+ Automated Tests), Test-Driven Development (TDD), Docker, Docker Compose, GitHub Actions, Ruff, OOD |
+| **Languages** | Python 3.10–3.12 (NumPy, SciPy, Matplotlib), C++, TypeScript, Bash, SQL (SQLite WAL) |
+| **Software Engineering** | Pytest (180+ Automated Tests), Test-Driven Development (TDD), Docker, Docker Compose, GitHub Actions, Ruff, OOD |
 | **Cloud & Microservices** | FastAPI, ASGI/Uvicorn, Prometheus Observability, REST Gateways, WebSocket Telemetry, Multi-stage Dockerfiles |
-| **AI & Agent Tooling** | Model Context Protocol (MCP stdio/JSON-RPC), SWE-bench Benchmark Authoring, LLM Code Evaluation |
+| **AI & Agent Tooling** | Model Context Protocol (MCP stdio/JSON-RPC), Handshake AI / SWE-bench Physical Simulation Benchmarks |
 | **Aerospace & Flight Physics** | 6-DoF Quaternions & Euler Dynamics, 3-DoF RK4 Trajectory, Multi-Stage Staging & Casing Jettison, 1976 US Standard Atmosphere |
 | **Astrodynamics & Ground** | SGP4/J2 Secular Oblateness, Hohmann & 3-Impulse Bi-Elliptic Transfers, Global Ground Station Network Handovers, WGS-84 Geodetic |
 | **Computational Fluid Dynamics** | Karman-Tsien Transonic Critical Mach & Korn Drag Divergence, Vortex Panel Method, NACA 4-Digit & 5-Digit Geometry, Squire-Young Drag |
@@ -89,16 +90,18 @@ graph TD
 ### 🌟 Featured Flagship Repositories
 
 #### 1. 🌐 [aerospace-ops-stack](https://github.com/perfectalone375/aerospace-ops-stack)
-> **Cloud-Native Aerospace Microservices Stack & Mission Control Telemetry Visualizer with Docker Compose**  
-> *Python • Docker Compose • FastAPI • HTML5 Canvas • CI/CD Matrix • 10 Automated Tests • MIT Licensed*
+> **Cloud-Native Aerospace Microservices Stack, SQLite ACID Persistence, MCP Central Portal & Handshake AI Evaluation Suite**  
+> *Python • Docker Compose • FastAPI • SQLite WAL • HTML5 Canvas • CI/CD Matrix • 22 Automated Tests • MIT Licensed*
 
-* **Central Mission Gateway:** Microservice hub orchestrating 3-DoF suborbital flight simulations, real-time SGP4 orbital propagation, Hohmann delta-v budgets, compressible gas dynamics, and SWE-bench AI benchmark evaluation.
-* **Interactive Mission Control UI:** Real-time canvas telemetry gauges (altitude, velocity, Mach, Max-Q), dynamic orbital ground tracks with elevation footprint circles, and airfoil surface pressure distribution charts.
-* **Docker Compose Architecture:** Production container network (`aero-mesh`) with healthchecks, isolated service bridges, and multi-stage builds.
+* **Central Mission Gateway:** Microservice hub orchestrating 3-DoF suborbital flight simulations, real-time SGP4 orbital propagation, Hohmann delta-v budgets, compressible gas dynamics, and Handshake AI benchmark evaluation.
+* **Zero-Dependency SQLite Persistence:** Thread-safe ACID persistence with Write-Ahead Logging (WAL mode), parameterized queries, cascading foreign keys, and analytical SQL leaderboards (`/api/db/runs`, `/api/db/leaderboard`).
+* **Model Context Protocol (MCP) Central Portal:** Standardized JSON-RPC 2.0 tool registry exposing 6 physical simulation tools (`simulate_staged_rocket`, `propagate_attitude_quaternions`, `calculate_oblique_shock`, etc.).
+* **Handshake AI Benchmark Suite:** 8 challenge problems (`AERO-001` through `AERO-008`) with dual fail-to-pass and pass-to-pass test harnesses testing physical singularities and boundary constraints.
+* **Interactive Mission Control UI:** Real-time canvas telemetry gauges, dynamic orbital ground tracks, interactive MCP tool runner, and live Handshake AI evaluation workbench.
 
 #### 2. 🔬 [aero-eval-benchmark](https://github.com/perfectalone375/aero-eval-benchmark)
 > **Autonomous Evaluation Harness & SWE-bench Style Benchmark for Testing Coding LLMs on Aerospace & Physics Tasks**  
-> *Python • SWE-bench Protocol • Docker • MCP Server • Multi-Python CI Matrix • 10 Automated Tests • MIT Licensed*
+> *Python • SWE-bench Protocol • Docker • MCP Server • Multi-Python CI Matrix • 15 Automated Tests • MIT Licensed*
 
 * **SWE-bench Standard Architecture:** Curated benchmark challenge matrix testing frontier LLMs on numerical singularities, transonic wave drag discontinuities, and orbital coordinate branch cuts.
 * **Isolated Evaluation Harness:** Validates unified diff patches against rigorous fail-to-pass edge case tests while enforcing zero regressions on pass-to-pass baselines.
@@ -107,44 +110,40 @@ graph TD
 
 #### 3. 🌪️ [cfd-airfoil-surrogate](https://github.com/perfectalone375/cfd-airfoil-surrogate)
 > **Physics-Informed CFD Aerodynamic Surrogate Model for Instantaneous Pressure ($C_p$), 5-Digit Geometry & Polars**  
-> *Python • Docker • Docker Compose • MCP Server • UIUC Wind Tunnel Validation • 18 Automated Tests • MIT Licensed*
+> *Python • Docker • Docker Compose • MCP Server • UIUC Wind Tunnel Validation • 23 Automated Tests • MIT Licensed*
 
 * **Instantaneous Prediction (<2 ms):** Generates chordwise surface pressure distributions ($C_p(x/c)$) and aerodynamic polars ($C_L, C_D, C_M, L/D$) 23,000x faster than 2D OpenFOAM RANS.
 * **NACA 4 & 5-Digit Airfoils:** Parametric cubic camber generator supporting high-performance 5-digit airfoils (e.g. NACA 23012) and 4-digit profiles.
 * **Pitching Moment & Center of Pressure:** Quarter-chord moment ($C_{m, c/4}$), leading-edge moment ($C_{m, LE}$), and center of pressure ($x_{cp} / c$) stability modeling.
 * **Vortex Panel & Boundary Layer:** Cosine leading-edge clustering, Kutta closure, and Squire-Young profile drag with stall roll-off.
-* **Tooling:** Native `aeroml` CLI, Docker container, and MCP server for direct AI tool calling.
 
 #### 4. 🛰️ [orbital-telemetry-agent](https://github.com/perfectalone375/orbital-telemetry-agent)
 > **Autonomous Satellite Orbit Propagator, Hohmann Transfer Calculator & Model Context Protocol (MCP) Server**  
-> *Python • Docker • Docker Compose • Multi-Python CI Matrix • 15 Automated Tests • MIT Licensed*
+> *Python • Docker • Docker Compose • Multi-Python CI Matrix • 20 Automated Tests • MIT Licensed*
 
 * **Astrodynamics & J2 Perturbation:** Keplerian orbit propagator modeling Earth oblateness ($J_2 = 1.08263 \times 10^{-3}$), nodal regression ($\dot{\Omega}$), and argument of perigee precession ($\dot{\omega}$).
 * **Orbital Transfers & Maneuvers:** Two-impulse Hohmann transfer delta-v budgets ($\Delta v_1, \Delta v_2$), transfer duration ($t_{\text{tof}}$), and combined apogee plane change optimization.
 * **Ground Station Tracking:** Topocentric SEZ coordinate transformation predicting satellite Acquisition of Signal (AOS), Loss of Signal (LOS), max elevation, and pass schedules.
 * **RF Doppler Telemetry:** Real-time line-of-sight range rate and RF Doppler frequency shift calculations for satellite radios.
-* **MCP Server Integration:** Native JSON-RPC 2.0 tools for Claude Desktop and Cursor (`propagate_orbit`, `predict_ground_passes`, `calculate_doppler_shift`, `calculate_hohmann_transfer`).
 
 #### 5. 🚀 [aero-flight-dynamics](https://github.com/perfectalone375/aero-flight-dynamics)
 > **High-Fidelity 3-DoF Aerospace Simulation Engine, Multi-Stage Staging & Model Context Protocol (MCP) Server**  
-> *Python • Docker • Docker Compose • Multi-Python CI Matrix • 35 Automated Tests • MIT Licensed*
+> *Python • Docker • Docker Compose • Multi-Python CI Matrix • 43 Automated Tests • MIT Licensed*
 
 * **Multi-Stage Vehicle Dynamics:** Discrete stage separation, dry mass casing jettison, inter-stage coast, and sustainer ignition modeling.
 * **MCP Server Integration:** Exposes JSON-RPC 2.0 tools for Claude Desktop, Cursor, and AI agents to simulate 3-DoF flights, staged trajectories, evaluate atmospheric layers, and analyze airfoils.
 * **Atmospheric Physics:** Exact 7-layer 1976 U.S. Standard Atmosphere model up to 86,000 meters geopotential altitude with Sutherland dynamic viscosity law.
 * **Compressible Aerodynamics:** Prandtl-Glauert subsonic compressibility corrections, Lock/Korn transonic wave drag divergence with non-linear saturation clamping ($C_{D,\text{wave}} \le 0.40$).
 * **Numerical Solver:** 4th-order Runge-Kutta (RK4) integrator tracking altitude, Mach number, axial G-load, dynamic pressure (Max-Q), and telemetry data.
-* **Dual Recovery Subsystem:** Staged drogue chute deployment at apogee and main canopy inflation for certified safe landing ($v_{\text{touchdown}} < 6.0\text{ m/s}$).
 
 #### 6. 📐 [openengineering-toolkit](https://github.com/perfectalone375/openengineering-toolkit)
 > **Transparent, Verified Computational Mechanics, Compressible Gas Dynamics & Rocket Propulsion Library**  
-> *Python • FastAPI • Docker • Docker Compose • CLI • MCP Server • 52 Automated Tests • MIT Licensed*
+> *Python • FastAPI • Docker • Docker Compose • CLI • MCP Server • 57 Automated Tests • MIT Licensed*
 
 * **Compressible Gas Dynamics:** Isentropic temperature and density ratios ($T_0/T, \rho_0/\rho$), nozzle sonic throat area ratio ($A/A^*$), Rankine-Hugoniot 1D normal shock jumps ($M_2, P_2/P_1, P_{02}/P_{01}$), and Prandtl-Meyer expansion angle ($\nu(M)$).
 * **Rocket Propulsion Analytics:** Tsiolkovsky delta-v, characteristic exhaust velocity $c^*$, nozzle thrust coefficient $C_F$, and total thrust.
 * **Fluid Dynamics & Sizing:** Reynolds number regime verification, dynamic pressure $q$, compressible Mach number, and Haaland pipe friction.
 * **Structural Solid Mechanics:** Euler-Bernoulli mid-span beam deflection, bending stress, and factor of safety (FoS).
-* **Cross-Platform Access:** Exposed via `openeng` CLI, FastAPI REST endpoints, containerized Uvicorn daemon, and native MCP stdio server.
 
 ---
 
@@ -152,9 +151,9 @@ graph TD
 
 <div align="center">
 
-| ⚡ Quickdraw | 🦈 Pull Shark (Silver • 16 PRs) | 👥 Pair Extraordinaire | 🚀 YOLO |
+| ⚡ Quickdraw | 🦈 Pull Shark (Silver • 23 PRs) | 👥 Pair Extraordinaire | 🚀 YOLO |
 |:---:|:---:|:---:|:---:|
-| Closed issue within 5m | 16 Merged Pull Requests | Co-authored merged commits | Merged PR without code review |
+| Closed issue within 5m | 23 Merged Pull Requests | Co-authored merged commits | Merged PR without code review |
 
 </div>
 
