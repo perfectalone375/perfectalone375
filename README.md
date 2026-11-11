@@ -11,8 +11,9 @@
 [![Docker](https://img.shields.io/badge/Docker-Ready-2496ED?logo=docker&logoColor=white)](https://docker.com)
 [![Docker Compose](https://img.shields.io/badge/Docker--Compose-Microservices-2496ED.svg?logo=docker&logoColor=white)](https://docs.docker.com/compose/)
 [![Model Context Protocol](https://img.shields.io/badge/MCP-Protocol%202024--11--05-8A2BE2.svg)](https://modelcontextprotocol.io)
-[![Test Suite Status](https://img.shields.io/badge/Tests-180%2B%20Passing-success.svg)](https://github.com/perfectalone375)
-[![Merged Pull Requests](https://img.shields.io/badge/Merged%20PRs-23%20Merged-success.svg?logo=git&logoColor=white)](https://github.com/perfectalone375)
+[![Tests Passing](https://img.shields.io/badge/Tests-183%2B%20Passing-success.svg)](https://github.com/perfectalone375)
+[![Merged Pull Requests](https://img.shields.io/badge/Merged%20PRs-24%20Merged-success.svg?logo=git&logoColor=white)](https://github.com/perfectalone375)
+[![Live Demo](https://img.shields.io/badge/Live%20Mission%20Control-GitHub%20Pages-0ea5e9?logo=github&logoColor=white)](https://perfectalone375.github.io/aerospace-ops-stack/)
 
 <br/>
 
@@ -29,7 +30,7 @@
 I am an **Aerospace & Computational Simulation Software Engineer** specializing in translating complex physical dynamics, multi-stage rocket trajectories, orbital mechanics, and fluid flows into high-performance, test-driven software, containerized microservices, and **Model Context Protocol (MCP)** tools. My work enables autonomous AI systems (Claude, Cursor, Antigravity) to reason through and simulate atmospheric flight physics, satellite orbits, aerodynamic surfaces, and propulsion thermodynamics with deterministic precision.
 
 - 🚀 **Core Focus:** Computational flight simulation, multi-stage vehicle staging, physics-informed AI surrogates, cloud-native aerospace microservices, zero-dependency ACID database persistence, and reproducible AI coding benchmarks (SWE-bench / Handshake AI).
-- 🛠️ **Engineering Stack:** Python (NumPy, SciPy, Matplotlib), C++, TypeScript, Pytest (180+ passing tests), SQLite (WAL mode), Docker, Docker Compose, GitHub Actions (CI/CD), Prometheus Observability, Linux.
+- 🛠️ **Engineering Stack:** Python (NumPy, SciPy, Matplotlib), C++, TypeScript, Pytest (183+ passing tests), SQLite (WAL mode), Docker, Docker Compose, GitHub Actions (CI/CD), Prometheus Observability, Linux.
 - 📐 **Domain Expertise:** 6-DoF Quaternions & Euler Rotational Dynamics, Multi-Stage Rocket Staging & Jettison, 1976 U.S. Standard Atmosphere (0–86 km), Transonic Drag Divergence, Runge-Kutta (RK4) Solvers, SGP4/J2 Secular Perturbations, Hohmann & 3-Impulse Bi-Elliptic Orbit Transfers, Global Ground Station Constellation Handovers, 2D Supersonic Oblique Shocks & $\theta-\beta-M$ Solvers, Vortex Panel Methods, Squire-Young Viscous Drag, NACA 4/5-Digit Camber, Compressible Isentropic Flow & Shock Waves, Tsiolkovsky Staged Rocket Propulsion.
 - 🤖 **AI Benchmarking & Tooling:** Designing deterministic fail-to-pass test harnesses and golden patches for LLM code evaluation across physical ODEs and aerodynamic singularities.
 
@@ -76,7 +77,7 @@ graph TD
 | Category | Technologies & Tools |
 |---|---|
 | **Languages** | Python 3.10–3.12 (NumPy, SciPy, Matplotlib), C++, TypeScript, Bash, SQL (SQLite WAL) |
-| **Software Engineering** | Pytest (180+ Automated Tests), Test-Driven Development (TDD), Docker, Docker Compose, GitHub Actions, Ruff, OOD |
+| **Software Engineering** | Pytest (183+ Automated Tests), Test-Driven Development (TDD), Docker, Docker Compose, GitHub Actions, Ruff, OOD |
 | **Cloud & Microservices** | FastAPI, ASGI/Uvicorn, Prometheus Observability, REST Gateways, WebSocket Telemetry, Multi-stage Dockerfiles |
 | **AI & Agent Tooling** | Model Context Protocol (MCP stdio/JSON-RPC), Handshake AI / SWE-bench Physical Simulation Benchmarks |
 | **Aerospace & Flight Physics** | 6-DoF Quaternions & Euler Dynamics, 3-DoF RK4 Trajectory, Multi-Stage Staging & Casing Jettison, 1976 US Standard Atmosphere |
@@ -89,15 +90,15 @@ graph TD
 
 ### 🌟 Featured Flagship Repositories
 
-#### 1. 🌐 [aerospace-ops-stack](https://github.com/perfectalone375/aerospace-ops-stack)
-> **Cloud-Native Aerospace Microservices Stack, SQLite ACID Persistence, MCP Central Portal & Handshake AI Evaluation Suite**  
-> *Python • Docker Compose • FastAPI • SQLite WAL • HTML5 Canvas • CI/CD Matrix • 22 Automated Tests • MIT Licensed*
+#### 1. 🌐 [aerospace-ops-stack](https://github.com/perfectalone375/aerospace-ops-stack) (`v0.2.0` • [Live Demo](https://perfectalone375.github.io/aerospace-ops-stack/))
+> **Cloud-Native Aerospace Microservices Stack, SQLite ACID Persistence, JSON-RPC 2.0 MCP Central Portal & Handshake AI Sandboxed Code Evaluator**  
+> *Python • Docker Compose • FastAPI • SQLite WAL • AST Subprocess Sandbox • CI/CD Matrix • 25 Automated Tests • MIT Licensed*
 
-* **Central Mission Gateway:** Microservice hub orchestrating 3-DoF suborbital flight simulations, real-time SGP4 orbital propagation, Hohmann delta-v budgets, compressible gas dynamics, and Handshake AI benchmark evaluation.
-* **Zero-Dependency SQLite Persistence:** Thread-safe ACID persistence with Write-Ahead Logging (WAL mode), parameterized queries, cascading foreign keys, and analytical SQL leaderboards (`/api/db/runs`, `/api/db/leaderboard`).
-* **Model Context Protocol (MCP) Central Portal:** Standardized JSON-RPC 2.0 tool registry exposing 6 physical simulation tools (`simulate_staged_rocket`, `propagate_attitude_quaternions`, `calculate_oblique_shock`, etc.).
-* **Handshake AI Benchmark Suite:** 8 challenge problems (`AERO-001` through `AERO-008`) with dual fail-to-pass and pass-to-pass test harnesses testing physical singularities and boundary constraints.
-* **Interactive Mission Control UI:** Real-time canvas telemetry gauges, dynamic orbital ground tracks, interactive MCP tool runner, and live Handshake AI evaluation workbench.
+* **Central Mission Gateway & Observability:** Microservice hub orchestrating 3-DoF suborbital flight simulations, real-time SGP4 orbital propagation, Hohmann delta-v budgets, compressible gas dynamics, and live thread-safe Prometheus telemetry (`/metrics`).
+* **Zero-Dependency SQLite Persistence:** Thread-safe ACID persistence with Write-Ahead Logging (WAL mode), configurable storage (`AERO_OPS_DB_PATH` + Docker volume), cascading foreign keys, and analytical SQL leaderboards (`/api/db/runs`, `/api/db/leaderboard`).
+* **Native JSON-RPC 2.0 MCP Portal:** Full MCP `2024-11-05` support over both `stdio` (`aero-ops-mcp`) and HTTP (`POST /mcp`), exposing 6 physics simulation tools and 3 live DB/benchmark resources.
+* **Handshake AI Isolated Sandbox Evaluator:** AST security scanner + timeout-guarded `python -I` subprocess harness validating buggy starter code vs candidate fixes across 8 aerospace SWE-bench challenges (`AERO-001` through `AERO-008`).
+* **Dual-Mode Mission Control UI & GitHub Pages:** Runs live against FastAPI + SQLite WAL locally/Docker or as a standalone interactive explorer at **[perfectalone375.github.io/aerospace-ops-stack](https://perfectalone375.github.io/aerospace-ops-stack/)**.
 
 #### 2. 🔬 [aero-eval-benchmark](https://github.com/perfectalone375/aero-eval-benchmark)
 > **Autonomous Evaluation Harness & SWE-bench Style Benchmark for Testing Coding LLMs on Aerospace & Physics Tasks**  
@@ -151,9 +152,9 @@ graph TD
 
 <div align="center">
 
-| ⚡ Quickdraw | 🦈 Pull Shark (Silver • 23 PRs) | 👥 Pair Extraordinaire | 🚀 YOLO |
+| ⚡ Quickdraw | 🦈 Pull Shark (Silver • 24 PRs) | 👥 Pair Extraordinaire | 🚀 YOLO |
 |:---:|:---:|:---:|:---:|
-| Closed issue within 5m | 23 Merged Pull Requests | Co-authored merged commits | Merged PR without code review |
+| Closed issue within 5m | 24 Merged Pull Requests | Co-authored merged commits | Merged PR without code review |
 
 </div>
 
